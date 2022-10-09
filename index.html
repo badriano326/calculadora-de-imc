@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta  name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div id="container">
+    <div>
+        <h1 class="title">Calculadora de IMC</h1>
+    </div>
+    <div>
+        <form class="tipsform" id="tipsform">
+            <label for="sexo">
+                <p>
+                    <select name="sexo" id="sexo" class="formSelect">
+                        <option  disable selected>Escolha uma opção</option>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                    </select>
+                </p>
+            </label>
+            <label for="peso">
+                <p>Qual seu peso</p>
+            </label>
+            <p>
+                Kg<input type="number" min="0" max="200" step=".01" placeholder="50.30" name="peso" id="peso" class="formInput" required>
+            </p>
+            <label for="altura">
+                <p>Qual sua altura</p>
+            </label>
+            <p>
+                Altura(metros) <input type="number" min="0" max="3" step=".01" placeholder="1.70" name="altura" id="altura" formInput" required>
+            </p>
+            <button type="submit" class="formSubmit">Calcular</button>
+        </form>
+    </div>
+    <div id="resultado">
+        IMC = 
+        <span id="tip">0.00</span>
+        <span id="media">media</span>
+    </div>
+</div>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

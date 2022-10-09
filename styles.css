@@ -1,0 +1,72 @@
+:root{
+    --cor-primaria: lightgreen;
+    --cor-secundaria: Dimgray;
+    --cor-terciaria: Gainsboro;
+}
+body{
+    font-size: 15px;
+    background-color: lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background-color: #F7F7F7;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 20px;
+}
+
+.title{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.tipsform{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.formInput{
+    background-color: white;
+    width: 40px;
+    padding: 4px 4px 7px 7px;
+}
+
+.formInput:focus{
+    border: 3px solid rgba(255, 0, 0, 0.596);
+    outline: none;
+}
+
+.formSelect{
+    width: 150px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.formSubmit{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: black;
+}
+
+#resultado{
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
